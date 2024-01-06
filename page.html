@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="page.css">
+
+        <title>Responsive landing page</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Christmas Gift</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#share" class="nav__link">Share</a></li>
+                        <li class="nav__item"><a href="#decoration" class="nav__link">Decorations</a></li>
+                        <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li>
+
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsdW63CSwNCQ6MfeB5MsfwlcgK12cXTx9ZOw&usqp=CAU" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Send a Gift For Christmas</h1>
+                        <p class="home__description">In these end of the year holidays send a gift to your loved one and share the happiness at Christmas.</p>
+                        <a href="#" class="button">Get Started</a>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== SHARE ==========-->
+            <section class="share section bd-container" id="share">
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
+                        <p class="share__description">Sharing these holidays is the best gift you can give, give a present or share your love with the people you love the most and celebrate with great happiness.</p>
+                        <a href="#" class="button">Send a Gift</a>
+                    </div>
+
+                    <div class="share__img">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--========== DECORATION ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title">Give Christmas Decorations <br> For Your Home</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1B1kAg23JVr4vqCWIH_xzukGKHt_73gZMBQ&usqp=CAU" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Christmas Bells</h3>
+                        <a href="#" class="button button-link">Go Shopping</a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQeQ0S4OzblfdtT2N8CAfyftlh3QO0z_pWw&usqp=CAU" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Christmas Candies</h3>
+                        <a href="#" class="button button-link">Go Shopping</a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjiKg32FEValR-gpAgbScgafB8i995gGexP_Clqpasa4TwpuvCzbw_AkyIOlH-qx2Y6L4&usqp=CAU" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Christmas Trees</h3>
+                        <a href="#" class="button button-link">Go Shopping</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== ACCESSORIES ==========-->
+            <section class="accessory section bd-container" id="accessory">
+                <h2 class="section-title">New Christmas <br> Accessories</h2>
+
+                <div class="accessory__container bd-grid">
+                    <div class="accessory__content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPcS-tMurhd6rRtT9iveaE1q5rXZ_Dq2_BQ&usqp=CAU" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Snow Globe</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$9.45</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQeQ0S4OzblfdtT2N8CAfyftlh3QO0z_pWw&usqp=CAU" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Candy</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$2.52</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjiKg32FEValR-gpAgbScgafB8i995gGexP_Clqpasa4TwpuvCzbw_AkyIOlH-qx2Y6L4&usqp=CAU" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Angel</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$13.15</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvjD5CAPwJcF4jsafyDVLD5fv1gdvhJpnO8w&usqp=CAU" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Sphere</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$4.25</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2IYCX-rAER4TzXTl-w-vmoafEbDMamiFFHw&usqp=CAU" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Surprise gift</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$7.99</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== SEND GIFT ==========-->
+            <section class="send section">
+                <div class="send__container bd-container bd-grid">
+                    <div class="send__content">
+                        <h2 class="section-title-center send__title">Send Gift Now</h2>
+                        <p class="send__description">Start giving away before the holidays are over. Write the home address of the person who will send the gift.</p>
+                        <form action="">
+                            <div class="send__direction">
+                                <input type="text" placeholder="House address" class="send__input">
+                                <a href="#" class="button">Send</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="send__img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz6zUIwFProuw1TKub0NC6EZebHfeQLNlMtw&usqp=CAU" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Christmas Gift</a>
+                    </h3>
+                    <p class="footer__description">I sent a gift and it gives <br> happiness</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Pricing </a></li>
+                        <li><a href="#" class="footer__link">Discounts</a></li>
+                        <li><a href="#" class="footer__link">Shipping mode</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 Anusuya. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script type="text/javascript" src="page.js"></script>
+    </body>
+</html>
